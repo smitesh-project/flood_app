@@ -4,8 +4,8 @@ import pickle
 import streamlit as st
 
 # Load the trained model and scaler
-loaded_model = pickle.load(open('D:/DBDA/project/a2/working/xgboost.sav', 'rb'))
-scaler = pickle.load(open('D:/DBDA/project/a2/working/scaler.sav', 'rb'))
+loaded_model = pickle.load(open('xgboost.sav', 'rb'))
+scaler = pickle.load(open('scaler.sav', 'rb'))
 
 def predict_flood(input_data):
     input_df = pd.DataFrame([input_data])
